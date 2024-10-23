@@ -7,12 +7,121 @@
 		border-bottom: #1e273700 0px solid;
 	}
 
-	35%,
+	30%,
 	100% {
 		background-color: #10141d86;
 		backdrop-filter: blur(25px);
 		padding: 0.8rem 4rem;
 		border-bottom: #353c4bdf 2px solid;
+	}
+}
+
+@keyframes aboutmeBtn {
+	0%, 5% {
+		top: calc(75% + 100px);
+		opacity: 1;
+	}
+
+	20% {
+		opacity: 0.8;
+	}
+
+	30%, 100% {
+		top: calc(65% - 100px);
+		opacity: 0;
+	}
+}
+
+@keyframes aboutme {
+	0% {
+		opacity: 0;
+		transform: translateY(-350px);
+	}
+
+	30%, 50% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	77%, 100% {
+		opacity: 0;
+		transform: translateY(550px);
+	}
+}
+
+@keyframes experiences {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	30%,
+	50% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	67%,
+	100% {
+		opacity: 0;
+		transform: translateY(-350px);
+	}
+}
+
+@keyframes experiencesOffset1 {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	33%,
+	50% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	70%,
+	100% {
+		opacity: 0;
+		transform: translateY(-350px);
+	}
+}
+
+@keyframes experiencesOffset2 {
+	10% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	37%,
+	55% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	75%,
+	100% {
+		opacity: 0;
+		transform: translateY(-350px);
+	}
+}
+
+@keyframes experiencesOffset3 {
+	20% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	40%,
+	60% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	77%,
+	100% {
+		opacity: 0;
+		transform: translateY(-350px);
 	}
 }
 

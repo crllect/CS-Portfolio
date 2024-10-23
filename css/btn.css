@@ -10,6 +10,9 @@
 	cursor: pointer !important;
 	z-index: 9;
 	top: calc(75% + 100px);
+	animation-name: aboutmeBtn;
+	animation-timeline: scroll(block nearest);
+	animation-fill-mode: forwards;
 }
 
 a {
