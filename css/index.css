@@ -50,7 +50,7 @@ a {
 }
 
 .aboutmeBtn2 svg {
-	margin-left: -1px;
+	margin: -2px 0 0 -2px;
 	scale: 0.8;
 }
 
@@ -110,7 +110,7 @@ footer {
 	width: 100%;
 	flex-wrap: wrap;
 	padding: 1rem;
-    margin-bottom: calc(50vh - 180px);
+	margin-bottom: calc(50vh - 180px);
 }
 
 ul {
@@ -121,10 +121,33 @@ ul {
 	position: fixed;
 	padding: 1.7rem 4rem;
 	top: 0;
+	left: 0;
 	margin: 0;
 	width: 100vw;
-	font-size: 20px;
 	z-index: 50;
+	animation-name: navAnim;
+	animation-timeline: scroll(block nearest);
+	animation-fill-mode: forwards;
+	transition: border 0.3s ease-in-out padding 0.3s ease-in-out backdrop-filter
+		0.3s ease-in-out background-color 0.3s ease-in-out;
+}
+
+@keyframes navAnim {
+	0%,
+	10% {
+		background-color: transparent;
+		backdrop-filter: blur(0);
+		padding: 1.7rem 4rem;
+		border-bottom: #1e273700 1px solid;
+	}
+
+	30%,
+	100% {
+		background-color: #10141d86;
+		backdrop-filter: blur(25px);
+		padding: 0.8rem 4rem;
+		border-bottom: #353c4bdf 2px solid;
+	}
 }
 
 .logo {
@@ -167,7 +190,7 @@ ul {
 	width: 300px;
 	height: 150px;
 	border-radius: 18px;
-	padding: 1px;
+	padding: 2px;
 }
 
 .btn .btn2 {
@@ -175,7 +198,7 @@ ul {
 	pointer-events: none;
 	width: 100%;
 	height: 100%;
-	border-radius: 18px;
+	border-radius: 16px;
 	background-color: #293241fa;
 	backdrop-filter: blur(100px) contrast(1.2);
 	z-index: 1;
@@ -241,6 +264,10 @@ ul {
 	height: 1000px;
 }
 
+:root {
+	--btnOpacity: 0.7;
+}
+
 @keyframes fadeInUp {
 	0% {
 		opacity: 0;
@@ -248,7 +275,7 @@ ul {
 	}
 
 	100% {
-		opacity: 0.5;
+		opacity: var(--btnOpacity);
 		transform: translateY(0);
 	}
 }
@@ -264,7 +291,7 @@ ul {
 	}
 
 	100% {
-		opacity: 0.5;
+		opacity: var(--btnOpacity);
 		transform: translateY(0);
 	}
 }
@@ -280,7 +307,7 @@ ul {
 	}
 
 	100% {
-		opacity: 0.5;
+		opacity: var(--btnOpacity);
 		transform: translateY(0);
 	}
 }
@@ -296,7 +323,7 @@ ul {
 	}
 
 	100% {
-		opacity: 0.5;
+		opacity: var(--btnOpacity);
 		transform: translateY(0);
 	}
 }
@@ -312,7 +339,7 @@ ul {
 	}
 
 	100% {
-		opacity: 0.5;
+		opacity: var(--btnOpacity);
 		transform: translateY(0);
 	}
 }
@@ -328,7 +355,7 @@ ul {
 	}
 
 	100% {
-		opacity: 0.5;
+		opacity: var(--btnOpacity);
 		transform: translateY(0);
 	}
 }
@@ -365,7 +392,7 @@ ul {
 	background-size: 1000% 1000%;
 	background-position: 0% 100%;
 	cursor: pointer;
-	font-size: 1.1rem;
+	font-size: 16px;
 }
 
 .navElement:hover {
@@ -402,7 +429,7 @@ ul {
 		background-size 0.3s ease-in-out;
 	background-position: 0% 100%;
 	cursor: pointer;
-	font-size: 1.1rem;
+	font-size: 16px;
 	background: linear-gradient(45deg, #ffffff77, #ffffff 80%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
