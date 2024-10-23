@@ -1,0 +1,109 @@
+@keyframes navAnim {
+	0%,
+	10% {
+		background-color: transparent;
+		backdrop-filter: blur(0);
+		padding: 1.7rem 4rem;
+		border-bottom: #1e273700 0px solid;
+	}
+
+	35%,
+	100% {
+		background-color: #10141d86;
+		backdrop-filter: blur(25px);
+		padding: 0.8rem 4rem;
+		border-bottom: #353c4bdf 2px solid;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	100% {
+		opacity: var(--btnOpacity);
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUpOffset2 {
+	0% {
+		opacity: 0;
+		transform: translateY(400px);
+	}
+
+	15% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: var(--btnOpacity);
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUpOffset3 {
+	0% {
+		opacity: 0;
+		transform: translateY(700px);
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: var(--btnOpacity);
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUpOffset4 {
+	0% {
+		opacity: 0;
+		transform: translateY(1000px);
+	}
+
+	45% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: var(--btnOpacity);
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUpOffset5 {
+	0% {
+		opacity: 0;
+		transform: translateY(1300px);
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: var(--btnOpacity);
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUpOffset6 {
+	0% {
+		opacity: 0;
+		transform: translateY(1600px);
+	}
+
+	75% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: var(--btnOpacity);
+		transform: translateY(0);
+	}
+}

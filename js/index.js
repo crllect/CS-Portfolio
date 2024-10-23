@@ -20,21 +20,3 @@ function updateGradientPosition() {
 
 document.addEventListener('mousemove', updateMousePosition);
 document.addEventListener('scroll', updateGradientPosition);
-
-const callback = (entries, observer) => {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			entry.target.classList.add('in-view');
-		} else {
-			entry.target.classList.remove('in-view');
-		}
-	});
-};
-
-const observer = new IntersectionObserver(callback, {
-	threshold: 0.0,
-	rootMargin: '0px 0px 5px 0px'
-});
-
-const experienceElements = document.querySelectorAll('.experience');
-experienceElements.forEach(element => observer.observe(element));
