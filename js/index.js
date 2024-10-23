@@ -36,7 +36,7 @@ async function getLatestCommitHash() {
     const latestCommitHash = data.sha;
     const latestCommitHashStr = document.querySelector('.lastCommitHash')
     console.log("Latest Commit Hash:", latestCommitHash);
-    latestCommitHashStr.innerHTML = latestCommitHash;
+    latestCommitHashStr.innerHTML = `#${latestCommitHash.substr(0, 7)}`;
     return latestCommitHash;
   } catch (error) {
     console.error("Error fetching the latest commit hash:", error);
