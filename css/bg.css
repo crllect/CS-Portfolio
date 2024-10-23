@@ -1,293 +1,335 @@
 .gradient-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: none;
 }
 
 .gradient {
-    position: absolute;
-    border-radius: 50%;
-    mix-blend-mode: screen;
-    will-change: transform;
-    background: radial-gradient(circle at center, transparent 50%, transparent 0%);
-    z-index: -1 !important;
-    filter: blur(25px);
-    scale: 1.5;
-    opacity: 1;
+	position: absolute;
+	border-radius: 50%;
+	mix-blend-mode: screen;
+	will-change: transform;
+	background: radial-gradient(
+		circle at center,
+		transparent 50%,
+		transparent 0%
+	);
+	z-index: -1 !important;
+	filter: blur(25px);
+	scale: 1.5;
+	opacity: 1;
 }
 
 .gradient1 {
-    width: 180px;
-    height: 180px;
-    top: 10%;
-    left: 20%;
-    background: radial-gradient(circle at center, rgba(243, 139, 168, 0.15) 0%, rgba(243, 139, 168, 0) 50%);
-    animation: animate1 25s ease-in-out infinite;
+	width: 180px;
+	height: 180px;
+	top: 10%;
+	left: 20%;
+	background: radial-gradient(
+		circle at center,
+		rgba(243, 139, 168, 0.15) 0%,
+		rgba(243, 139, 168, 0) 50%
+	);
+	animation: animate1 25s ease-in-out infinite;
 }
 
 .gradient2 {
-    width: 220px;
-    height: 220px;
-    top: 50%;
-    left: 70%;
-    background: radial-gradient(circle at center, rgba(166, 227, 161, 0.12) 0%, rgba(166, 227, 161, 0) 50%);
-    animation: animate2 28s ease-in-out infinite;
+	width: 220px;
+	height: 220px;
+	top: 50%;
+	left: 70%;
+	background: radial-gradient(
+		circle at center,
+		rgba(166, 227, 161, 0.12) 0%,
+		rgba(166, 227, 161, 0) 50%
+	);
+	animation: animate2 28s ease-in-out infinite;
 }
 
 .gradient3 {
-    width: 200px;
-    height: 200px;
-    top: 30%;
-    left: 40%;
-    background: radial-gradient(circle at center, rgba(137, 180, 250, 0.15) 0%, rgba(137, 180, 250, 0) 50%);
-    animation: animate3 22s ease-in-out infinite;
+	width: 200px;
+	height: 200px;
+	top: 30%;
+	left: 40%;
+	background: radial-gradient(
+		circle at center,
+		rgba(137, 180, 250, 0.15) 0%,
+		rgba(137, 180, 250, 0) 50%
+	);
+	animation: animate3 22s ease-in-out infinite;
 }
 
 .gradient4 {
-    width: 250px;
-    height: 250px;
-    top: 60%;
-    left: 30%;
-    background: radial-gradient(circle at center, rgba(245, 194, 231, 0.13) 0%, rgba(245, 194, 231, 0) 50%);
-    animation: animate4 26s ease-in-out infinite;
+	width: 250px;
+	height: 250px;
+	top: 60%;
+	left: 30%;
+	background: radial-gradient(
+		circle at center,
+		rgba(245, 194, 231, 0.13) 0%,
+		rgba(245, 194, 231, 0) 50%
+	);
+	animation: animate4 26s ease-in-out infinite;
 }
 
 .gradient5 {
-    width: 170px;
-    height: 170px;
-    top: 80%;
-    left: 50%;
-    background: radial-gradient(circle at center, rgba(148, 226, 213, 0.18) 0%, rgba(148, 226, 213, 0) 50%);
-    animation: animate5 18s ease-in-out infinite;
+	width: 170px;
+	height: 170px;
+	top: 80%;
+	left: 50%;
+	background: radial-gradient(
+		circle at center,
+		rgba(148, 226, 213, 0.18) 0%,
+		rgba(148, 226, 213, 0) 50%
+	);
+	animation: animate5 18s ease-in-out infinite;
 }
 
 .gradient6 {
-    width: 190px;
-    height: 190px;
-    top: 20%;
-    left: 80%;
-    background: radial-gradient(circle at center, rgba(249, 226, 175, 0.15) 0%, rgba(249, 226, 175, 0) 50%);
-    animation: animate6 24s ease-in-out infinite;
+	width: 190px;
+	height: 190px;
+	top: 20%;
+	left: 80%;
+	background: radial-gradient(
+		circle at center,
+		rgba(249, 226, 175, 0.15) 0%,
+		rgba(249, 226, 175, 0) 50%
+	);
+	animation: animate6 24s ease-in-out infinite;
 }
 
 .gradient7 {
-    width: 210px;
-    height: 210px;
-    top: 40%;
-    left: 10%;
-    background: radial-gradient(circle at center, rgba(242, 205, 205, 0.14) 0%, rgba(242, 205, 205, 0) 50%);
-    animation: animate7 20s ease-in-out infinite;
+	width: 210px;
+	height: 210px;
+	top: 40%;
+	left: 10%;
+	background: radial-gradient(
+		circle at center,
+		rgba(242, 205, 205, 0.14) 0%,
+		rgba(242, 205, 205, 0) 50%
+	);
+	animation: animate7 20s ease-in-out infinite;
 }
 
 .gradient8 {
-    width: 160px;
-    height: 160px;
-    top: 70%;
-    left: 20%;
-    background: radial-gradient(circle at center, rgba(166, 173, 200, 0.12) 0%, rgba(166, 173, 200, 0) 50%);
-    animation: animate8 30s ease-in-out infinite;
+	width: 160px;
+	height: 160px;
+	top: 70%;
+	left: 20%;
+	background: radial-gradient(
+		circle at center,
+		rgba(166, 173, 200, 0.12) 0%,
+		rgba(166, 173, 200, 0) 50%
+	);
+	animation: animate8 30s ease-in-out infinite;
 }
 
 .gradient9 {
-    width: 230px;
-    height: 230px;
-    top: 50%;
-    left: 40%;
-    background: radial-gradient(circle at center, rgba(180, 190, 254, 0.2) 0%, rgba(180, 190, 254, 0) 50%);
-    animation: animate9 26s ease-in-out infinite;
+	width: 230px;
+	height: 230px;
+	top: 50%;
+	left: 40%;
+	background: radial-gradient(
+		circle at center,
+		rgba(180, 190, 254, 0.2) 0%,
+		rgba(180, 190, 254, 0) 50%
+	);
+	animation: animate9 26s ease-in-out infinite;
 }
 
 .gradient10 {
-    width: 200px;
-    height: 200px;
-    top: 30%;
-    left: 60%;
-    background: radial-gradient(circle at center, rgba(203, 166, 247, 0.14) 0%, rgba(203, 166, 247, 0) 50%);
-    animation: animate10 24s ease-in-out infinite;
+	width: 200px;
+	height: 200px;
+	top: 30%;
+	left: 60%;
+	background: radial-gradient(
+		circle at center,
+		rgba(203, 166, 247, 0.14) 0%,
+		rgba(203, 166, 247, 0) 50%
+	);
+	animation: animate10 24s ease-in-out infinite;
 }
 
 @keyframes animate1 {
-    0% {
-        transform: translate(0vw, 0vh) scale(1) rotate(0deg);
-    }
+	0% {
+		transform: translate(0vw, 0vh) scale(1) rotate(0deg);
+	}
 
-    25% {
-        transform: translate(20vw, -15vh) scale(2.1) rotate(90deg);
-    }
+	25% {
+		transform: translate(20vw, -15vh) scale(2.1) rotate(90deg);
+	}
 
-    50% {
-        transform: translate(40vw, 0vh) scale(0.6) rotate(180deg);
-    }
+	50% {
+		transform: translate(40vw, 0vh) scale(0.6) rotate(180deg);
+	}
 
-    75% {
-        transform: translate(20vw, 15vh) scale(1.9) rotate(270deg);
-    }
+	75% {
+		transform: translate(20vw, 15vh) scale(1.9) rotate(270deg);
+	}
 
-    100% {
-        transform: translate(0vw, 0vh) scale(1) rotate(360deg);
-    }
+	100% {
+		transform: translate(0vw, 0vh) scale(1) rotate(360deg);
+	}
 }
 
 @keyframes animate2 {
-    0% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
-    }
+	0% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
+	}
 
-    33% {
-        transform: translate(-25vw, 20vh) scale(0.8) rotate(120deg);
-    }
+	33% {
+		transform: translate(-25vw, 20vh) scale(0.8) rotate(120deg);
+	}
 
-    66% {
-        transform: translate(-25vw, -20vh) scale(2.5) rotate(240deg);
-    }
+	66% {
+		transform: translate(-25vw, -20vh) scale(2.5) rotate(240deg);
+	}
 
-    100% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
-    }
+	100% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
+	}
 }
 
 @keyframes animate3 {
-    0% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
-    }
+	0% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
+	}
 
-    50% {
-        transform: translate(30vw, 25vh) scale(0.6) rotate(180deg);
-    }
+	50% {
+		transform: translate(30vw, 25vh) scale(0.6) rotate(180deg);
+	}
 
-    100% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
-    }
+	100% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
+	}
 }
 
 @keyframes animate4 {
-    0% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
-    }
+	0% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
+	}
 
-    25% {
-        transform: translate(-20vw, -25vh) scale(2.5) rotate(90deg);
-    }
+	25% {
+		transform: translate(-20vw, -25vh) scale(2.5) rotate(90deg);
+	}
 
-    50% {
-        transform: translate(0vw, -50vh) scale(0.6) rotate(180deg);
-    }
+	50% {
+		transform: translate(0vw, -50vh) scale(0.6) rotate(180deg);
+	}
 
-    75% {
-        transform: translate(20vw, -25vh) scale(2.1) rotate(270deg);
-    }
+	75% {
+		transform: translate(20vw, -25vh) scale(2.1) rotate(270deg);
+	}
 
-    100% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
-    }
+	100% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
+	}
 }
 
 @keyframes animate5 {
-    0% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
-    }
+	0% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
+	}
 
-    50% {
-        transform: translate(15vw, -35vh) scale(2.0) rotate(180deg);
-    }
+	50% {
+		transform: translate(15vw, -35vh) scale(2) rotate(180deg);
+	}
 
-    100% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
-    }
+	100% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
+	}
 }
 
 @keyframes animate6 {
-    0% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
-    }
+	0% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
+	}
 
-    25% {
-        transform: translate(-25vw, 20vh) scale(0.6) rotate(90deg);
-    }
+	25% {
+		transform: translate(-25vw, 20vh) scale(0.6) rotate(90deg);
+	}
 
-    50% {
-        transform: translate(-50vw, 0vh) scale(2.3) rotate(180deg);
-    }
+	50% {
+		transform: translate(-50vw, 0vh) scale(2.3) rotate(180deg);
+	}
 
-    75% {
-        transform: translate(-25vw, -20vh) scale(0.8) rotate(270deg);
-    }
+	75% {
+		transform: translate(-25vw, -20vh) scale(0.8) rotate(270deg);
+	}
 
-    100% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
-    }
+	100% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
+	}
 }
 
 @keyframes animate7 {
-    0% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
-    }
+	0% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
+	}
 
-    50% {
-        transform: translate(35vw, -25vh) scale(0.7) rotate(180deg);
-    }
+	50% {
+		transform: translate(35vw, -25vh) scale(0.7) rotate(180deg);
+	}
 
-    100% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
-    }
+	100% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
+	}
 }
 
 @keyframes animate8 {
-    0% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
-    }
+	0% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
+	}
 
-    33% {
-        transform: translate(-20vw, 30vh) scale(2.0) rotate(120deg);
-    }
+	33% {
+		transform: translate(-20vw, 30vh) scale(2) rotate(120deg);
+	}
 
-    66% {
-        transform: translate(20vw, 30vh) scale(0.9) rotate(240deg);
-    }
+	66% {
+		transform: translate(20vw, 30vh) scale(0.9) rotate(240deg);
+	}
 
-    100% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
-    }
+	100% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
+	}
 }
 
 @keyframes animate9 {
-    0% {
-        transform: translate(0vw,
+	0% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
+	}
 
-                0vh) scale(1.5) rotate(0deg);
-    }
+	25% {
+		transform: translate(30vw, -35vh) scale(0.9) rotate(90deg);
+	}
 
-    25% {
-        transform: translate(30vw, -35vh) scale(0.9) rotate(90deg);
-    }
+	50% {
+		transform: translate(0vw, -70vh) scale(2.4) rotate(180deg);
+	}
 
-    50% {
-        transform: translate(0vw, -70vh) scale(2.4) rotate(180deg);
-    }
+	75% {
+		transform: translate(-30vw, -35vh) scale(0.7) rotate(270deg);
+	}
 
-    75% {
-        transform: translate(-30vw, -35vh) scale(0.7) rotate(270deg);
-    }
-
-    100% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
-    }
+	100% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
+	}
 }
 
 @keyframes animate10 {
-    0% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
-    }
+	0% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(0deg);
+	}
 
-    50% {
-        transform: translate(-35vw, 40vh) scale(0.6) rotate(180deg);
-    }
+	50% {
+		transform: translate(-35vw, 40vh) scale(0.6) rotate(180deg);
+	}
 
-    100% {
-        transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
-    }
+	100% {
+		transform: translate(0vw, 0vh) scale(1.5) rotate(360deg);
+	}
 }
