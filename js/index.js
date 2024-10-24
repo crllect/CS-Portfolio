@@ -64,16 +64,16 @@ const trackBottom = document.querySelector('.trackBottom');
 const scrollerInner = document.querySelector('.scrollerInner');
 
 function updateTracks() {
-    const scrollerHeight = scrollerInner.clientHeight;
-    const thumbTop = parseFloat(getComputedStyle(thumb).top);
-    const topPercent = (thumbTop / scrollerHeight) * 100;
-    trackTop.style.height = `calc(${topPercent}% - 15px)`;
-    trackBottom.style.height = `calc(${100 - topPercent}% - 14px)`;
+	const scrollerHeight = scrollerInner.clientHeight;
+	const thumbTop = parseFloat(getComputedStyle(thumb).top);
+	const topPercent = (thumbTop / scrollerHeight) * 100;
+	trackTop.style.height = `calc(${topPercent}% - 15px)`;
+	trackBottom.style.height = `calc(${100 - topPercent}% - 14px)`;
 }
 
 function trackThumbPosition() {
-    updateTracks();
-    requestAnimationFrame(trackThumbPosition);
+	updateTracks();
+	requestAnimationFrame(trackThumbPosition);
 }
 
 trackThumbPosition();
