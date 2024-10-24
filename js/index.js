@@ -67,8 +67,8 @@ function updateTracks() {
 	const scrollerHeight = scrollerInner.clientHeight;
 	const thumbTop = parseFloat(getComputedStyle(thumb).top);
 	const topPercent = (thumbTop / scrollerHeight) * 100;
-	trackTop.style.height = `calc(${topPercent}% - 15px)`;
-	trackBottom.style.height = `calc(${100 - topPercent}% - 14px)`;
+	trackTop.style.height = `calc(${topPercent}% - 5px)`;
+	trackBottom.style.height = `calc(${100 - topPercent}% - 4px)`;
 }
 
 function trackThumbPosition() {

@@ -62,7 +62,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%) translateY(-10px);
 	height: 0;
 	background: #fff;
 }
@@ -71,7 +71,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%) translateY(10px);
 	background: #ffffff5c;
 	height: 100%;
 }
@@ -355,8 +355,12 @@ ul {
 
 #about {
 	position: absolute;
-	top: calc(0.4 * var(--pageHeight) - 45vh + 100px);
+	top: calc(0.4 * var(--pageHeight) - 40vh + 150px);
 	width: 100%;
+}
+
+.info:not(#about) {
+	transform: translateY(5vh);
 }
 
 .lastCommitHashContainer {
