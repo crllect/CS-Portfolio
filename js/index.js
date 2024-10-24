@@ -44,3 +44,36 @@ async function getLatestCommitHash() {
 }
 
 getLatestCommitHash();
+
+function updatePageHeight() {
+	const pageHeight = document.documentElement.scrollHeight;
+	document.documentElement.style.setProperty(
+		'--pageHeight',
+		`${pageHeight}px`
+	);
+}
+
+window.addEventListener('resize', updatePageHeight);
+window.addEventListener('DOMContentLoaded', updatePageHeight);
+
+updatePageHeight();
+
+const thumb = document.querySelector('.thumb');
+const trackTop = document.querySelector('.trackTop');
+const trackBottom = document.querySelector('.trackBottom');
+const scrollerInner = document.querySelector('.scrollerInner');
+
+function updateTracks() {
+    const scrollerHeight = scrollerInner.clientHeight;
+    const thumbTop = parseFloat(getComputedStyle(thumb).top);
+    const topPercent = (thumbTop / scrollerHeight) * 100;
+    trackTop.style.height = `calc(${topPercent}% - 15px)`;
+    trackBottom.style.height = `calc(${100 - topPercent}% - 14px)`;
+}
+
+function trackThumbPosition() {
+    updateTracks();
+    requestAnimationFrame(trackThumbPosition);
+}
+
+trackThumbPosition();

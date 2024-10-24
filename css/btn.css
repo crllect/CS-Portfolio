@@ -36,14 +36,11 @@ a {
 .btn {
 	position: relative;
 	background: #353c4b;
-	font-size: 1.5rem;
 	border: none;
 	color: white;
 	cursor: pointer;
 	outline: none;
 	overflow: hidden;
-	width: 300px;
-	height: 150px;
 	border-radius: 18px;
 	padding: 2px;
 }
@@ -75,6 +72,8 @@ a {
 }
 
 .footerBtn {
+	width: 300px;
+	height: 150px;
 	opacity: 0;
 	position: relative;
 	animation-name: fadeInUp;
