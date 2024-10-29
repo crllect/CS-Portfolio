@@ -355,7 +355,7 @@ ul {
 
 #about {
 	position: absolute;
-	top: calc(0.4 * var(--pageHeight) - 40vh + 150px);
+	transform: translateY(calc((-650px) / 2 - 25vh));
 	width: 100%;
 }
 
