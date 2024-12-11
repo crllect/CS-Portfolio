@@ -100,6 +100,7 @@ main {
 	gap: 20px;
 	width: 100%;
 	height: 100%;
+	scroll-snap-type: y mandatory !important;
 }
 
 .hero {
@@ -155,6 +156,13 @@ main {
 	margin: 0 auto;
 	max-width: 1080px;
 	width: 100%;
+}
+
+section:has(.info) {
+	width: 100vw;
+	height: 100vh;
+	scroll-snap-align: start !important;
+	position: relative;
 }
 
 .aboutme,
