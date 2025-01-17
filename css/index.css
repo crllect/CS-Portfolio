@@ -28,6 +28,20 @@ body {
 	position: fixed;
 }
 
+@media (max-width: 1200px) {
+	.scroller {
+		display: none;
+	}
+
+	.info {
+		flex-direction: column !important;
+	}
+
+	.experiences {
+		margin: 1rem auto !important;
+	}
+}
+
 .scrollerInner {
 	display: flex;
 	flex-direction: column;
@@ -297,7 +311,8 @@ footer {
 	width: 100%;
 	flex-wrap: wrap;
 	padding: 1rem;
-	margin-bottom: calc(50vh - 180px);
+	bottom: calc(50vh - 180px);
+	margin-bottom: 700px;
 }
 
 ul {
