@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<!--
+	TODO:
+		Instead of making a new page,
+		have the entire main element on a carosel,
+		and drag the carosel if I click on portfolio,
+		this way background state can be saved,
+		AND the transition will be more graceful,
+		could even make the enitre main element an
+		iframe of a different page, may be laggy tho 
+	-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/bg.css" />
+		<link rel="stylesheet" href="css/btn.css" />
+		<link rel="stylesheet" href="css/anim.css" />
+
+		<link rel="icon" href="/assets/favicon.webp" />
+	</head>
+	<body>
+		<div class="scroller">
+			<div class="scrollerInner">
+				<div class="trackTop"></div>
+				<div class="thumb">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#fff"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-triangle"
+					>
+						<path
+							d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"
+						/>
+					</svg>
+				</div>
+				<div class="trackBottom"></div>
+			</div>
+		</div>
+		<nav class="navigation">
+			<div class="navigationInner">
+				<img
+					src="https://avatars.githubusercontent.com/u/144494583?v=4"
+					alt="Logo"
+					class="logo"
+				/>
+				<ul class="navDirector">
+					<li><a href="/#hero" class="navElement">Home</a></li>
+					<li>
+						<a href="/portfolio" class="navSelected">Portfolio</a>
+					</li>
+					<li>
+						<a href="https://github.com/crllect" class="navElement"
+							>GitHub</a
+						>
+					</li>
+					<li><a href="/contact" class="navElement">Contact</a></li>
+				</ul>
+				<div class="lastCommitHashContainer">
+					<a href="https://github.com/crllect/CS-Portfolio"
+						><i class="lastCommitHash">#_______</i>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<div class="background">
+			<div class="gradient-container">
+				<div class="gradient gradient1"></div>
+				<div class="gradient gradient2"></div>
+				<div class="gradient gradient3"></div>
+				<div class="gradient gradient4"></div>
+				<div class="gradient gradient5"></div>
+				<div class="gradient gradient6"></div>
+				<div class="gradient gradient7"></div>
+				<div class="gradient gradient8"></div>
+				<div class="gradient gradient9"></div>
+				<div class="gradient gradient10"></div>
+			</div>
+		</div>
+		<main></main>
+		<script src="js/index.js"></script>
+	</body>
+</html>

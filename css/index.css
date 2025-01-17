@@ -114,6 +114,7 @@ main {
 	gap: 20px;
 	width: 100%;
 	height: 100%;
+	scroll-snap-type: y mandatory !important;
 }
 
 .hero {
@@ -169,6 +170,13 @@ main {
 	margin: 0 auto;
 	max-width: 1080px;
 	width: 100%;
+}
+
+section:has(.info) {
+	width: 100vw;
+	height: 100vh;
+	scroll-snap-align: start !important;
+	position: relative;
 }
 
 .aboutme,
@@ -370,7 +378,7 @@ ul {
 
 #about {
 	position: absolute;
-	top: calc(0.4 * var(--pageHeight) - 40vh + 150px);
+	transform: translateY(calc((-650px) / 2 - 25vh));
 	width: 100%;
 }
 
@@ -415,7 +423,7 @@ ul {
 	position: absolute;
 	width: 100%;
 	transform: scaleX(0) translateY(2px);
-	height: 2px;
+	height: 1px;
 	bottom: 0;
 	left: 0;
 	background-color: #ffffff;
@@ -448,7 +456,7 @@ ul {
 	content: '';
 	position: absolute;
 	width: 100%;
-	height: 2px;
+	height: 1px;
 	bottom: 0;
 	left: 0;
 	background-color: #ffffff;

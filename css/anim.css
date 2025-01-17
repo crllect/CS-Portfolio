@@ -43,7 +43,7 @@
 		opacity: 0;
 	}
 }
-
+/*
 @keyframes aboutme {
 	0% {
 		opacity: 0;
@@ -137,7 +137,7 @@
 		opacity: 0;
 		transform: translateY(-350px);
 	}
-}
+} */
 
 @keyframes fadeInUp {
 	0% {
